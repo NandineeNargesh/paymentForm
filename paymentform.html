@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+<link rel="stylesheet" href="paymentform.css">
+</head>
+<body>
+<div class="container">
+    <form action="" method="get" >  
+  <h1 class="main_heading" > Payment Form </h1>
+  <hr>
+  
+  <h2> User  Details </h2>
+
+  <p>
+    Name : <input type="text" required name="name"  placeholder="Nandinee Nargesh">
+  </p>
+
+  <fieldset>
+    <Legend > Gender </Legend required>
+      <p>
+      
+  Male <input type="radio" name="Gender" id="Male"  >  Female <input type="radio" name="Gender" id="Female" >
+</p>
+    </fieldset>
+
+  <p> 
+    Address : <textarea name=" address" id=" address" cols="50" rows="06" ></textarea>
+  </p>
+
+  <p>
+  email : <input type="email" name=" email" id="email"required>
+  </p>
+
+  <p>
+    Pincode : <input type="number" name="Pincode" id="Pincode"required >
+  </p>
+ 
+
+ 
+<h2> Payment Details </h2>
+cardtype : <select name="cardtype" id="cardtype" required>
+    <option value=" "> --select a card type--  </option>
+    <option value="kotak"> kotak </option>
+    <option value="SBI"> SBI </option>
+    <option value="BOI"> BOI </option>
+    <option value="pnb"> pnb </option>
+    <option value="fii"> fii </option>
+    <option value="rupay">rupay</option>
+</select>
+
+<P> 
+    card number : <input type="number" name="card number" id="card number" required>
+</P>
+
+<p>
+    expiration date: <input type="date" name="expiration date" id="expiration date" required>
+</p>
+ 
+<p> 
+    CVV : <input type="password" name="cvv" id="cvv" required>
+</p>
+
+
+<input type="submit" value="Pay Now" >
+
+</form>
+
+</div>
+</body>
+
+</html>
